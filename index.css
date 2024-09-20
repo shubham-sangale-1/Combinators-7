@@ -1,0 +1,27 @@
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    font-size: larger;
+}
+
+.parent{
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    gap:105px;
+}
+.card{
+    height: 300px;
+    width:250px !important;
+    background-color:red;
+    border-radius: 10px;
+}
+
+.card:hover{
+    opacity: 1;
+}
+
+.card:hover ~ .card,
+.card:not(:hover){
+    opacity: 0.5;
+} 
